@@ -1,10 +1,48 @@
 .App {
   text-align: center;
+  display: flex;
+  position: relative;
+  justify-content: center;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 80vw;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  border-radius: 30px;
+  background: grey;
+  position: absolute;
+  top: 25vh;
+}
+
+.card>div{
+  padding-top: 1rem;
+  width: 75vw;
+  height: 13rem;
+}
+
+.card>div>span{
+  padding: 0;
+  margin: 0;
+  display: inline;
+}
+
+.card>button{
+  font-size: 2rem;
+  padding: 1rem;
+  width: 4.3rem;
+  border-radius: 50%;
+  background: gray;
+  position: relative;
+  left: 56rem;
 }
 
 @media (prefers-reduced-motion: no-preference) {
